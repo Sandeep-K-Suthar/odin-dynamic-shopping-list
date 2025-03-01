@@ -23,6 +23,8 @@ function addItem() {
   createListElement.insertBefore(createDeleteButton,createListElement.nextSibling);
 
   createDeleteButton.addEventListener('click',() => createListElement.remove());
+  selectInput.value='';
+  selectInput.focus();
 }
 
 selectAddButton.addEventListener('click', addItem);
